@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>ECHO Tawiland Css</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        fontFamily: {
+          inter: ['Inter', 'sans-serif'],
+          montserrat: ['Montserrat', 'sans-serif'],
+        },
+      },
+    },
+  }
+</script>
+
+</head>
+
+<body class="bg-[#0C0C0C] text-[#ffffff] font-inter box-content">
+  <section class="echo-banner px-6 min-h-[500px] bg-[url('/imgs/freepik.png'),url('/imgs/Elegant-Blue.png')] bg-no-repeat bg-right-center bg-[right_center] relative
+  before:content-[''] before:absolute before:left-0 before:top-0 before:right-0 before:bottom-0 before:w-full before:h-full before:bg-[url('/imgs/Overlay.png')] flex justify-start items-center">
+    <div class="container max-w-[1467px] mx-auto">
+      <div class="echo-logo absolute top-[21px] bottom-auto left-[43px] right-auto">
+        <a href="#"><img src="/imgs/Logo_White.png"></a>
+      </div>
+      <div class="echo-banner-sec z-1 relative">
+        <div class="echo-text">
+            <h2 class="font-inter text-[#ffffff] text-[16px] mb-[20px]">ECHO INTELLIGENCE</h2>
+            <p class="font-montserrat  text-transparent bg-clip-text bg-[linear-gradient(90deg,#BDBDBD_0%,#FFFFFF_50.98%,#606060_100%)] font-semibold text-[28px] md:text-[40px] lg:text-[55px] max-w-[659px] leading-[1] -tracking-[1.78px]">Regime Shift: Determining intent from AI in real time</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="echo-middle py-[62px] px-6">
+    <div class="container max-w-[1467px] mx-auto">
+        <div class="echo-form-text grid grid-cols-[1fr] lg:grid-cols-[1fr_500px] xl:grid-cols-[1fr_600px] gap-[50px] md:gap-[80px] lg:gap-[80px] xl:gap-[100px] 2xl:gap-[120px]">
+            <div class="echo-txt">
+                <p class="font-light mb-[25px] text-[18px] leading-[1.5]">Decision-making has moved. People are using AI chat as the first stop, often before they ever hit a website or a search engine. And those conversations are more candid, more nuanced, and full of the real trade-offs people are trying to resolve.</p>
+                <p class="font-light mb-[25px] text-[18px] leading-[1.5]">This whitepaper explains how <b class="font-bold">echo Intelligence</b> turns topics detected in AI conversations into structured, governed intelligence, without ever sharing users’ private messages, so teams can focus on signals tied to real outcomes.</p>
+                <h2 class="mb-[25px] text-[20px] leading-[1.5] font-bold">In this whitepaper, you will learn how to:</h2>
+                <ul class="font-light list-disc text-[18px] leading-[1.5]">
+                    <li class="mb-[5px] ml-[10px]">Use AI-chat insight to understand what people care about based on aggregated patterns</li>
+                    <li class="mb-[5px] ml-[10px]">Move beyond funnels, polls, and surveys that miss the “why” right before someone drops off or changes their mind</li>
+                    <li class="mb-[5px] ml-[10px]">Shift from segments to decision states and build profiles that reflect how people decide in real moments</li>
+                    <li class="mb-[5px] ml-[10px]">Understand echo’s governed approach: topic detection + optional matched tasks + clear consent, with clients receiving only anonymized, permitted task data</li>
+                    <li class="mb-[5px] ml-[10px]">Put it to work for real teams: audience insights, offer testing, competitive intel, and media diagnostics based on what people ask unprompted</li>
+                </ul>
+            </div>
+            <div class="echo-middle-form bg-[#131313] rounded-2xl px-[23px] py-[28px] h-fit">
+                <div class="echo-mid bg-[#d9d9d912] rounded-2xl px-[19px] py-[24px] h-full">
+                    <h2 class="font-montserrat font-semibold text-transparent bg-clip-text bg-[linear-gradient(90deg,#BDBDBD_0%,#FFFFFF_50.98%,#606060_100%)] text-[28px] leading-[1] -tracking-[1.78px] mb-[16px]">Download the whitepaper</h2>
+                    <div class="form-middle">
+                        <form>
+                        <div class="grid gap-[20px] mb-[20px] md:grid-cols-2">
+                            <div>
+                                <input type="text" id="first_name" class="min-h-[48px] bg-[#d9d9d912] rounded-xl px-[19px] border text-[#cccccc] border-[#cccccc] w-full placeholder-[#cccccc]" placeholder="First name" required />
+                            </div>
+                            <div>
+                                <input type="text" id="last_name" class="min-h-[48px] bg-[#d9d9d912] rounded-xl px-[19px] border text-[#cccccc] border-[#cccccc] w-full placeholder-[#cccccc]" placeholder="Last Name" required />
+                            </div>
+                        </div>    
+                        <div class="mb-[20px]">
+            <input type="email" id="email" class="min-h-[48px] bg-[#d9d9d912] rounded-xl px-[19px] border text-[#cccccc] border-[#cccccc] w-full placeholder-[#cccccc]" placeholder="Email" required />
+                        </div>  
+                        <div class="mb-[20px]">
+            <input type="tel" id="phone" class="min-h-[48px] bg-[#d9d9d912] rounded-xl px-[19px] border text-[#cccccc] border-[#cccccc] w-full placeholder-[#cccccc]" placeholder="Phone Number" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required />
+                        </div>
+                        <div class="mb-[20px]">
+            <input type="url" id="website" class="min-h-[48px] bg-[#d9d9d912] rounded-xl px-[19px] border text-[#cccccc] border-[#cccccc] w-full placeholder-[#cccccc]" placeholder="Company Name" required />
+                        </div>
+                        <div class="grid gap-[20px] mb-[20px] md:grid-cols-2">    
+        <div class="">
+            <select type="text" id="visitors" class="min-h-[48px] bg-[#d9d9d912] rounded-xl px-[19px] border text-[#cccccc] border-[#cccccc] w-full placeholder-[#cccccc]" placeholder="Job Title" required />
+                <option value="FR">France</option>
+                <option value="DE">Germany</option>
+            </select>
+        </div>
+        <div class="">
+            <select type="text" id="text" class="min-h-[48px] bg-[#d9d9d912] rounded-xl px-[19px] border text-[#cccccc] border-[#cccccc] w-full placeholder-[#cccccc]" placeholder="Company Size" required />
+                <option value="FR">France</option>
+                <option value="DE">Germany</option>
+            </select>
+        </div> 
+        <div class="">
+            <select type="text" id="text" class="min-h-[48px] bg-[#d9d9d912] rounded-xl px-[19px] border text-[#cccccc] border-[#cccccc] w-full placeholder-[#cccccc]" placeholder="Country*" required />
+                <option value="FR">France</option>
+                <option value="DE">Germany</option>
+            </select>
+        </div> 
+        <div class="">
+            <select type="text" id="text" class="min-h-[48px] bg-[#d9d9d912] rounded-xl px-[19px] border text-[#cccccc] border-[#cccccc] w-full placeholder-[#cccccc]" placeholder="Industry*" required />
+                <option value="FR">France</option>
+                <option value="DE">Germany</option>
+            </select>
+        </div> 
+                        </div>    
+                        <div class="flex items-start mb-6">
+                            <div class="flex items-center h-5">
+                                <input id="remember" type="checkbox" value="" class="w-4 h-4 border border-default-medium rounded-xs bg-neutral-secondary-medium focus:ring-2 focus:ring-brand-soft" required />
+                            </div>
+                            <label for="remember" class="ms-2 text-sm font-light font-inter border-[] bg-[#202020] text-heading text-[#9C9C9C]">By downloading this content, you are giving permission to be contacted by a Echo representative or 3rd party in regards to the content (by phone or email).</label>
+                        </div>
+                        <div class="flex items-start mb-6">
+                            <div class="flex items-center h-5">
+                                <input id="remember" type="checkbox" value="" class="w-4 h-4 border border-default-medium rounded-xs bg-neutral-secondary-medium focus:ring-2 focus:ring-brand-soft" required />
+                            </div>
+                            <label for="remember" class="ms-2 text-sm font-light font-inter border-[] bg-[#202020] text-heading text-[#9C9C9C]">I agree to receive information, tips, and offers about Echo products and services.</label>
+                        </div>    
+                        <button type="submit" class="text-white w-full min-h-[42px] rounded-full bg-[#292929B8] p-0 hover:bg-white hover:text-[#000]">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+  <section class="echo-bottom px-6 bg-[url('/imgs/last-bg.png')] bg-center min-h-[300px] md:min-h-[310px] lg:min-h-[340px] xl:min-h-[350px]">
+    <div class="container max-w-[1467px] mx-auto">
+        <div class="pt-[70px]">
+            <h2 class="font-montserrat font-semibold text-transparent bg-clip-text bg-[linear-gradient(90deg,#BDBDBD_0%,#FFFFFF_50.98%,#606060_100%)] text-[24px] md:text-[30px] lg:text-[35px] leading-[1] -tracking-[1.78px] mb-[16px]">About Echo </h2>
+            <p class="font-inter text-[#ffffff] text-[16px] leading-[1.6] font-light max-w-full md:max-w-full lg:max-w-[641px]">Echo Intelligence turns consented AI interactions in their chat platform into a live map of what people truly care about during decisions. Focused on markets, democracy, and research, they help teams shift from guesswork to outcome-driven smarts—think lifelike personas from real-time talk, fully privacy-safe </p>
+        </div>
+    </div>
+  </section>
+  
+</body>
+</html>
+
+
